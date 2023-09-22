@@ -61,6 +61,19 @@ $sub-footer-text-color: $white;
 @import "pages/page-teams";
 @import "pages/page-service";
 
+// Custom Changes
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-image-absolute {
+  position: relative;
+  max-width: 80%;
+  height: auto;
+}
+
 body {
   font-size: 16px;
   line-height: 1.2;

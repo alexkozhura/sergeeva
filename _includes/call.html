@@ -5,15 +5,24 @@
     {% endif %}
     {% if site.data.contact.email %}
     <div class="call-email"><strong>Email: </strong>
-      <a href="mailto:{{ .site.data.contact.email }}">
+      <a href="mailto:{{ site.data.contact.email }}">
         {{ site.data.contact.email }}
+      </a>
+    </div>
+    {% endif %}
+    {% if site.data.contact.instagram_handle and site.data.contact.instagram_url %}
+    <div class="call-instagram"><strong>Instagram: </strong>
+      <a href="{{ site.data.contact.instagram_url }}" target="_blank">
+        {{ site.data.contact.instagram_handle }}
       </a>
     </div>
     {% endif %}
   </div>
     {% if include.show_button %}
       <div class="call-box-bottom">
-        <a href="{{ site.data.contact.contact_button_link }}" class="button">Contact</a>
+        <a href="{{ site.data.contact.contact_button_link }}" class="button" target="blank">
+          Запись на консультацию
+        </a>
       </div>
     {% endif %}
 </div>
